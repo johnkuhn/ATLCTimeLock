@@ -4,10 +4,9 @@ Note: Even though I have VS Code installed locally, I did all the coding and deb
 https://remix.ethereum.org  
 My ATLC.TimeLockContract workspace contained all my files below.
 
-1. ATLCMinter.sol - can test minting a new type of token and send it to an address such as the address of an account in metamask.
+1. ATLCMinter.sol (MyMinter.sol is the latest version after code analysis performed by Peter Adaaku - peteradaaku202020@gmail.com and I cleaned things up.) - can test minting a new type of token and send it to an address such as the address of an account in metamask.
 
-
-2. ATLCTimeLock.sol - this is my main smart contract for being able to be sent our ATLC tokens and holding them for 2 years and then releaseTokens will allow them to be released to founders.  This contract also allows founding wallets that have already been added to the list of wallets, to be able to vote-out a bad actor wallet. If majority of wallets vote for same bad actor, the bad actor wallet will not receive a token payout.
+2. ATLCTimeLock.sol (MyTimeLock.sol is the latest version after code analysis performed by Peter Adaaku - peteradaaku202020@gmail.com and I cleaned things up.)- this is my main smart contract for being able to be sent our ATLC tokens and holding them for 2 years and then releaseTokens will allow them to be released to founders.  This contract also allows founding wallets that have already been added to the list of wallets, to be able to vote-out a bad actor wallet. If majority of wallets vote for same bad actor, the bad actor wallet will not receive a token payout.
 
 To use this smart contract, it must be deployed AFTER the main ATLC Token has been created. When deploying ATLCTimeLock, the ATLC Token's address must be passed into its constructor.
 
