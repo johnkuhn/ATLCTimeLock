@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: KuhnSoft LLC
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.18;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
@@ -51,7 +51,7 @@ contract MyTimeLock {
         availableForReleaseDateTime = block.timestamp + 730 days; //approx 2 years
 
         //TODO: IMPORTANT, REMOVE THIS CODE AFTER TESTING AS THIS ALLOWS TOKENS TO BE RELEASED EARLY FOR TESTING.
-        availableForReleaseDateTime = block.timestamp - 1 days;
+        //availableForReleaseDateTime = block.timestamp - 1 days;
 
     }
 
